@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:baselineAligned="false"
+    android:paddingTop="100dp"
+    tools:context="fr.ensisa.letaif.AddActivity">
+
+    <EditText
+        android:id="@+id/poIName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/poIName"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/poICreatorName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/poICreatorName"
+        android:inputType="text"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/longitude"
+            android:layout_width="204dp"
+            android:layout_height="match_parent"
+            android:hint="@string/longitude"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/latitude"
+            android:layout_width="204dp"
+            android:layout_height="match_parent"
+            android:hint="@string/latitude"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:inputType="numberDecimal"/>
+    </android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/poIDescription"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="@string/description"
+        android:inputType="text"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <RatingBar
+            android:id="@+id/poIRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1.0" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/poIImages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/images"
+        android:onClick="onClickBtn"/>
+
+</LinearLayout>

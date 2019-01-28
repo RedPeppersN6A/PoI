@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PoI</string>
+    <string name="action_settings">Settings</string>
+    <string name="poIName">poIName</string>
+    <string name="longitude">longitude</string>
+    <string name="latitude">latitude</string>
+    <string name="description">description</string>
+    <string name="images">images</string>
+    <string name="poICreatorName">poICreatorName</string>
+    <string name="all_delete">Delete All Elements</string>
+    <string name="poIDescription">poIDescription</string>
+</resources>
